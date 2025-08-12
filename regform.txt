@@ -1,0 +1,98 @@
+<html>
+<head>
+<title>Hackathon Registration</title>
+<style>
+  body {
+background:white;
+ font-family: Arial,sans-serif;
+ padding:20px;
+}
+  form {
+background:white;
+ max-width:400px;
+ margin:auto;
+ padding:20px;
+ border-radius:60px;
+}
+  h2 {
+text-align:center;
+ color:black; 
+margin-bottom:20px;
+}
+  label {
+display:block;
+ margin:10px 0 5px; 
+font-weight:bold; 
+color:#555;
+}
+  input, select {
+width:100%; 
+padding:8px;
+ margin-bottom:12px; 
+border:1px solid #ccc; 
+border-radius:4px;
+ }
+.inline {
+display:inline-block;
+ margin-right:15px; 
+font-weight:normal;
+ color:#444; 
+cursor:pointer;
+}
+input[type=radio], input[type=checkbox] {
+margin-right:6px;
+ vertical-align:middle;
+}
+  .fee-note {
+    font-size:14px;
+    color:#666;
+    margin-top: 20px;  
+    margin-bottom: 15px;
+  }
+  button {
+width:100%; 
+padding:12px;
+ background:#2f80ed; 
+border:none;
+ border-radius:5px;
+ color:#fff; 
+font-size:16px; 
+cursor:pointer;
+}
+  button:hover {
+background:#1c5dc9;
+}
+</style>
+</head>
+<body>
+<form>
+  <h2>Hackathon Registration</h2>
+  <label>Full Name</label><input type="text" name="fullname" required placeholder="Your full name">
+  <label>Email Address</label><input type="email" name="email" required placeholder="you@example.com">
+  <label>Phone Number</label><input type="tel" name="phone" required placeholder="+1234567890">
+  <label>Gender</label>
+  <label class="inline"><input type="radio" name="gender" value="Male" required>Male</label>
+  <label class="inline"><input type="radio" name="gender" value="Female">Female</label>
+  <label class="inline"><input type="radio" name="gender" value="Other">Other</label>
+  <label>College Name</label><input type="text" name="college" required placeholder="Your college name">
+  <label>Branch</label>
+  <select name="branch" required>
+    <option disabled selected>Select branch</option>
+    <option>CSE</option><option>ECE</option><option>ME</option><option>CE</option><option>Other</option>
+  </select>
+  <label>Which Year?</label>
+  <select name="year" required>
+    <option disabled selected>Select year</option>
+    <option>1st</option><option>2nd</option><option>3rd</option><option>4th</option><option>Other</option>
+  </select>
+  <label>Events (₹100 each)</label>
+  <label class="inline"><input type="checkbox" name="events" value="Cluechase">Cluechase</label>
+  <label class="inline"><input type="checkbox" name="events" value="Mindmaze">Mindmaze</label>
+  <label class="inline"><input type="checkbox" name="events" value="Codechef">Codechef</label>
+  <label class="inline"><input type="checkbox" name="events" value="Hackerank">Hackerank</label>
+  <label class="inline"><input type="checkbox" name="events" value="CodeBugs">CodeBugs</label>
+  <div class="fee-note">* Each selected event costs ₹100. Calculate total fee yourself.</div>
+  <button type="submit">Register</button>
+</form>
+</body>
+</html>
